@@ -33,13 +33,21 @@ Website resmi untuk **Kos Biru Pos 7**, hunian nyaman di Pos 7 Sentani, Jayapura
 
 /project-root
 │
+
 ├─ index.html # Halaman utama
+
 ├─ style.css # CSS utama (responsif & dark mode)
+
 ├─ script.js # JS interaksi, slider, dark mode, animasi
+
 ├─ /images # Folder gambar kos, slider, hero, fasilitas
+
 │ ├─ bangunan-utama.jpg
+
 │ ├─ foto1.jpg
+
 │ ├─ foto2.jpg
+
 │ └─ ...
 
 
