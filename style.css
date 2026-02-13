@@ -5,11 +5,9 @@
     --primary: #1e3a8a;
     --primary-dark: #0f172a;
     --accent: #22c55e;
-
     --text-dark: #1e293b;
     --bg-light: #f8fafc;
     --white: #ffffff;
-
     --transition: all 0.3s ease;
 }
 
@@ -185,6 +183,21 @@ body {
 }
 
 /* =========================
+   HERO BUTTONS RESPONSIVE
+========================= */
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-outline {
+    margin-left: 0;
+}
+
+/* =========================
    BUTTONS
 ========================= */
 .btn {
@@ -208,7 +221,6 @@ body {
 .btn-outline {
     border: 2px solid white;
     color: white;
-    margin-left: 10px;
 }
 
 .btn-outline:hover {
@@ -461,5 +473,27 @@ body {
     .facility-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 10px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-btns {
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 12px 20px;
     }
 }
