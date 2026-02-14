@@ -469,14 +469,51 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* --- PERBAIKAN HERO (FOTO LANDSCAPE) --- */
+    .hero {
+        height: auto; 
+        min-height: 450px; /* Tinggi minimal supaya teks tidak sesak */
+        aspect-ratio: 4 / 5; /* Ratio ideal di HP agar foto tetap terlihat luas tapi muat teks */
+        padding: 100px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-img {
+        position: absolute; /* Harus absolute agar teks bisa di atas foto */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Foto tetap penuh tanpa gepeng */
+        object-position: center; 
+        z-index: -2;
+    }
+
+    /* --- TYPOGRAPHY & BUTTONS --- */
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem; /* Ukuran pas untuk HP */
+        line-height: 1.2;
     }
 
     .hero-sub {
         font-size: 0.9rem;
     }
 
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    /* --- ELEMEN LAINNYA (JANGAN DIHAPUS) --- */
     .nav-links {
         display: none;
     }
@@ -499,29 +536,6 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 10px;
     }
-
-    .hero-btns {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-        padding: 12px 0;
-        font-size: 1rem;
-    }
-   
-    .hero {
-    height: auto;
-    padding: 100px 20px;
-   }
-
-    .hero-img {
-    position: relative;
-    height: auto;
-    object-fit: contain;
-   }
 }
 
 
