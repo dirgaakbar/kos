@@ -511,7 +511,19 @@ body {
         padding: 12px 0;
         font-size: 1rem;
     }
+   
+    .hero {
+    height: auto;
+    padding: 100px 20px;
+   }
+
+    .hero-img {
+    position: relative;
+    height: auto;
+    object-fit: contain;
+   }
 }
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .hero-btns {
