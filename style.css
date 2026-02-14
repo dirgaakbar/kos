@@ -531,10 +531,29 @@ body {
     .p-card {
         padding: 30px;
     }
+   
+   .facility-grid {
+        /* 1. Perkecil kolom menjadi minimal 90px agar bisa muat 3 box ke samping */
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); 
+        gap: 8px; /* Jarak antar box dipersempit */
+    }
 
-    .facility-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
+    .f-card {
+        /* 2. Perkecil padding dalam box */
+        padding: 12px 5px; 
+        border-radius: 8px;
+    }
+
+    .f-card i {
+        /* 3. Perkecil ukuran icon */
+        font-size: 1.2rem; 
+        margin-bottom: 5px;
+    }
+
+    .f-card h3 {
+        /* 4. Perkecil ukuran teks agar tidak berantakan */
+        font-size: 0.7rem; 
+        line-height: 1.1;
     }
 }
 
