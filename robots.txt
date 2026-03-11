@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dirga.my.id/kos/sitemap.xml
+Sitemap: https://dirga.my.id/kosbiru/sitemap.xml
